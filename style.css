@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Stay Classy";
+    src: url("./ressources/fonts/Stay\ Classy\ SLDT.otf"), url("./ressources/fonts/Stay\ Classy\ SLDT.ttf");
+    /* Priorité : OWFF, OTF, TTF */
+}
+
+body {
+    background-image: url(./ressources/palegradients_freebie-uniocs/png/paleactgradient-freebie-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Hauteur minimale de 100% de la fenêtre du navigateur */
+    /* min-height: 100vh;  */
+
+    /* Ou : */
+    background-attachment: fixed;
+}
+
+.gift img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.gift {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.gift a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.gift a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: Stay Classy, sans-serif;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+}
