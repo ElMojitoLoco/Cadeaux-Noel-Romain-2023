@@ -18,9 +18,10 @@ body {
 
 .gift img {
     width: 300px;
-    height: auto;
+    height: 210px;
     object-fit: cover;
     border-radius: 20px;
+    object-position: 50% 60%;
 }
 
 .gift {
@@ -47,4 +48,50 @@ h1 {
     text-align: center;
     font-size: 70px;
     font-weight: 600;
+}
+
+.gift:hover {
+    transform: scale(1.05);
+    background-color: rgba(226, 205, 11, 0.25);
+}
+
+p {
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#text{
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    /* text-transform: uppercase; */
+    text-align: center;
+  }
+  #text:after{
+    content: "";
+    animation: clignote 0.7s infinite linear;
+    width: 2px;
+    height: 3rem;
+    display: inline-block;
+    background: rgb(14, 15, 22);;
+  }
+  @keyframes clignote {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  .container {
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .or-text {
+    /* styles de votre choix, par exemple : */
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
 }

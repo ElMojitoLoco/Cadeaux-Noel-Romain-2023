@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    var text = document.getElementById('text');
+    var splitText = text.innerText.split('');
+
+    text.innerHTML = '';
+    i = 0
+    setInterval(function () {
+        AjoutDeLettre()
+    }
+        , 100)
+
+    function AjoutDeLettre() {
+        if (i < splitText.length) {
+            text.innerHTML += splitText[i];
+            i++;
+        }
+    }
+
     var gifts = [
         {
             name: "Livre Audio : Murtagh",
@@ -62,15 +80,31 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         giftList.appendChild(giftElement);
+
+        if (gifts.indexOf(gift) < gifts.length - 1) {
+            var orDiv = document.createElement('div');
+            orDiv.classList.add('or-text');
+            orDiv.textContent = 'OU';
+            giftList.appendChild(orDiv);
+        }
+
     });
 
     function selectGift(selectedGift) {
-        gifts.forEach(function (gift, i) {
-            if (gift !== selectedGift) {
-                var giftElements = document.getElementsByClassName('gift');
-                giftElements[i].style.display = 'none';
-            }
-        });
-        alert("Merci d'avoir choisi : " + selectedGift.name);
+        var confirmation = confirm("T'es sûre de vouloir choisir : " + selectedGift.name + " ? Mais genre vraiment sûre de chez sûre ??");
+        if (confirmation) {
+            gifts.forEach(function (gift, i) {
+                if (gift !== selectedGift) {
+                    var giftElements = document.getElementsByClassName('gift');
+                    giftElements[i].style.display = 'none';
+                }
+                var orTexts = document.getElementsByClassName('or-text');
+                while (orTexts[0]) {
+                    orTexts[0].parentNode.removeChild(orTexts[0]);
+                }
+
+            });
+            alert("OK merci :) (t'as choisi : " + selectedGift.name + ")");
+        }
     }
 });
