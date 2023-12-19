@@ -31,13 +31,19 @@ document.addEventListener('DOMContentLoaded', function () {
             url: "https://docs.midjourney.com/docs/plans"
         },
         {
-            name: "Cours Udemy",
+            name: "Cours Udemy 1 (SASS)",
+            image: "./ressources/cours_sass.jpg",
+            price: "20€",
+            url: "https://www.udemy.com/course/sass-et-scss-le-css-du-futur/"
+        },
+        {
+            name: "Cours Udemy 2 (GOLANG)",
             image: "./ressources/cours_go.jpg",
             price: "20€",
             url: "https://www.udemy.com/course/go-programming-golang-the-complete-developers-guide/"
         },
         {
-            name: "Autre cours Udemy",
+            name: "Cours Udemy 3 (TYPESCRIPT)",
             image: "./ressources/cours_typescript.jpg",
             price: "30€",
             url: "https://www.udemy.com/course/typescript-the-complete-developers-guide/"
