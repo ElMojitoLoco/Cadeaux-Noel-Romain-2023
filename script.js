@@ -37,13 +37,19 @@ document.addEventListener('DOMContentLoaded', function () {
             url: "https://www.udemy.com/course/sass-et-scss-le-css-du-futur/"
         },
         {
-            name: "Cours Udemy 2 (GOLANG)",
+            name: "Cours Udemy 2 (WEBDESIGN)",
+            image: "./ressources/cours_webdesign.jpg",
+            price: "25€",
+            url: "https://www.udemy.com/course/le-webdesign-pour-les-debutants-avec-figma/"
+        },
+        {
+            name: "Cours Udemy 3 (GOLANG)",
             image: "./ressources/cours_go.jpg",
             price: "20€",
             url: "https://www.udemy.com/course/go-programming-golang-the-complete-developers-guide/"
         },
         {
-            name: "Cours Udemy 3 (TYPESCRIPT)",
+            name: "Cours Udemy 4 (TYPESCRIPT)",
             image: "./ressources/cours_typescript.jpg",
             price: "30€",
             url: "https://www.udemy.com/course/typescript-the-complete-developers-guide/"
